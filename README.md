@@ -9,5 +9,4 @@ The header is an animated GIF of one of my favorite animes called CowBoy Bebop. 
 ![chrome_3K8wlM2pGt](https://user-images.githubusercontent.com/79811001/123162822-124d0e00-d43f-11eb-9a7b-6f7e84130ee5.png)
 ![chrome_8rys980CYD](https://user-images.githubusercontent.com/79811001/123162820-124d0e00-d43f-11eb-83b3-2e98499a0c98.png)
 
-
-![seeyouspacecowboy](https://user-images.githubusercontent.com/79811001/123163583-dfefe080-d43f-11eb-9595-4cc14bf6c5eb.jpg)
+![spacecowboytext](https://user-images.githubusercontent.com/79811001/123164199-a23f8780-d440-11eb-825f-41325afad139.jpg)
