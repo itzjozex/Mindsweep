@@ -34,6 +34,16 @@ p {
   font-size: 50px;
 }
 
+header h1 {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  padding: 4px 1% 4px 6%;
+  margin: 2;
+  font-size: 2vw;
+  line-height: 2;
+}
+
+
 header {
   padding: 7px 6% 7px 0;
   display: flex;
@@ -44,22 +54,6 @@ header {
   background-color: var(--tertiary);
   box-shadow: 2 7px 39px rgba(146, 204, 206, 0.4);
 }
-
-header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
-  padding: 4px 1% 4px 6%;
-  margin: 2;
-  font-size: 2vw;
-  line-height: 2;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 nav a {
   text-decoration: none;
   padding: 10px 15px;
@@ -73,6 +67,12 @@ nav a {
   font-size: 1.4rem;
 }
 
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 nav a:hover {
   background-size: 100% 100%;
   color: var(--primary);
@@ -86,6 +86,17 @@ main {
   margin-top: 13px;
   margin-bottom: 24px;
 }
+
+.hero-banner h2 {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  margin: 1;
+  padding: 4px 9px;
+  font-size: 2.0rem;
+  line-height: 1.0;
+  display: inline;
+}
+
 
 .hero-banner {
   background: rgb(68, 88, 120);
@@ -105,21 +116,18 @@ main {
 .hero-banner div {
   flex: 0 0 80%;
 }
-
-.hero-banner h2 {
-  background-color: var(--secondary);
-  color: var(--tertiary);
-  margin: 1;
-  padding: 4px 9px;
-  font-size: 2.0rem;
-  line-height: 1.0;
-  display: inline;
-}
-
 .page-wrapper {
   max-width: 82%;
   margin-left: auto;
   margin-right: auto;
+}
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 12px;
+  border-right: 3px solid var(--primary);
+  font-size: 3vw;
+  line-height: 1.1;
 }
 
 .page-section {
@@ -132,21 +140,12 @@ main {
   justify-content: space-between;
 }
 
-.page-section > h2 {
-  flex: 0 0 20%;
-  text-align: right;
-  padding-right: 12px;
-  border-right: 3px solid var(--primary);
-  font-size: 3vw;
-  line-height: 1.1;
+.page-section p {
+  margin-bottom: 12px;
 }
 
 .page-section > div {
   flex: 0 0 72%;
-}
-
-.page-section p {
-  margin-bottom: 12px;
 }
 
 .flex-container {
@@ -173,11 +172,6 @@ main {
   font-size: 0.9rem;
 }
 
-.flex-item:first-child {
-    min-height: 300px;
-    flex-basis: 100%;
-}
-
 .flex-item:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -187,16 +181,13 @@ main {
   padding: 8px 8px;
 }
 
-.flex-item h3 {
-  font-size: 1.6rem;
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
 }
 
-.contact address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+.flex-item h3 {
+  font-size: 1.6rem;
 }
 
 .contact address a {
@@ -214,6 +205,14 @@ main {
   display: inline-block;
 }
 
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
 .contact address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
@@ -224,6 +223,10 @@ main {
   background-image: url("../images/02-run-buddy.jpg");
 }
 
+.pastel-puzzles {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
 .led-wall {
   background-image: url("../images/02-portfolio-1.jpg");
 }
@@ -231,11 +234,6 @@ main {
 .react-calc {
   background-image: url("../images/02-portfolio-2.jpg");
 }
-
-.pastel-puzzles {
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
 .titangaming {
   background-image: url("../images/titangaming.png");
   background-size: cover;
@@ -261,11 +259,6 @@ main {
     justify-content: center;
   }
 
-  .page-section > h2,
-  .page-section > div {
-    flex: 0 0 100%;
-  }
-
   .page-section > h2 {
     border-right: none;
     border-bottom: 3px solid var(--primary);
@@ -274,25 +267,33 @@ main {
     text-align: left;
     font-size: 7vw;
   }
+  
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }
-
+  
   .flex-item:first-child {
     min-height: 150px;
   }
-
+  
+.flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+  
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
   .hero-banner {
     justify-content: center;
     text-align: center;
   }
 
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
